@@ -13,7 +13,12 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://paramit-frontend.vercel.app",
+    origin: [
+      "http://localhost:5173",
+      "https://paramit-frontend.vercel.app",
+      "https://www.pestcontrolsutton.co.uk",
+      "https://pestcontrolsutton.co.uk",
+    ],
     credentials: true,
   })
 );
